@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25">
+  <columns>
+    <TableColumn prefWidth="101.60003662109375" text="Administrador" />
+    <TableColumn prefWidth="112.0" text="Usuário" />
+      <TableColumn prefWidth="62.4000244140625" text="Data" />
+      <TableColumn prefWidth="75.0" text="Hora" />
+  </columns>
+</TableView>
