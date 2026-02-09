@@ -16,7 +16,7 @@
       <PasswordField layoutX="225.0" layoutY="231.0" />
       <ImageView fitHeight="123.0" fitWidth="600.0" pickOnBounds="true">
          <image>
-            <Image url="@../../../../../../../../../../../../Downloads/logo-removebg-preview.png" />
+            <Image url="@assets/LogoAC.png" />
          </image>
       </ImageView>
       <Label layoutX="136.0" layoutY="337.0" prefHeight="18.0" prefWidth="328.0" text="Caso tenha duvidas, entre em contato com o provedor." />

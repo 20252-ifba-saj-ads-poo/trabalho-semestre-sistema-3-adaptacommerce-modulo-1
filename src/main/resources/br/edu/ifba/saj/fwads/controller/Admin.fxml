@@ -16,7 +16,7 @@
       <Text layoutX="278.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha:" wrappingWidth="42.14337158203125" />
       <ImageView fx:id="LogoReduzida" fitHeight="148.0" fitWidth="221.0" layoutX="22.0" layoutY="97.0" pickOnBounds="true">
          <image>
-            <Image url="@../../../../../../../../../../../../Downloads/logo%20reduzida.png" />
+            <Image url="@assets/LogoReduzida.png" />
          </image>
       </ImageView>
       <PasswordField fx:id="Csenha" layoutX="348.0" layoutY="196.0" onAction="#SalvaSenha" />
