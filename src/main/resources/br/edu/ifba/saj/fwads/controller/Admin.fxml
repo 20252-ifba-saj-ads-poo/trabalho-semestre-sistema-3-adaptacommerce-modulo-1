@@ -8,18 +8,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="AdminController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TextField layoutX="348.0" layoutY="150.0" prefHeight="26.0" prefWidth="150.0" />
-      <Text layoutX="157.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastre o Usuário administrador." textAlignment="CENTER" wrappingWidth="252.0" />
+      <TextField fx:id="Cnome" layoutX="348.0" layoutY="150.0" onAction="#SalvaNome" prefHeight="26.0" prefWidth="150.0" />
+      <Text fx:id="Minfo" layoutX="157.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastre o Usuário administrador." textAlignment="CENTER" wrappingWidth="252.0" />
       <Text layoutX="278.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" wrappingWidth="42.14337158203125" />
       <Text layoutX="278.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha:" wrappingWidth="42.14337158203125" />
-      <ImageView fitHeight="148.0" fitWidth="214.0" layoutX="22.0" layoutY="97.0" pickOnBounds="true">
+      <ImageView fx:id="LogoReduzida" fitHeight="148.0" fitWidth="221.0" layoutX="22.0" layoutY="97.0" pickOnBounds="true">
          <image>
             <Image url="@../../../../../../../../../../../../Downloads/logo%20reduzida.png" />
          </image>
       </ImageView>
-      <PasswordField layoutX="348.0" layoutY="196.0" />
-      <Button layoutX="383.0" layoutY="245.0" mnemonicParsing="false" text="Login" />
+      <PasswordField fx:id="Csenha" layoutX="348.0" layoutY="196.0" onAction="#SalvaSenha" />
+      <Button fx:id="Blogin" layoutX="383.0" layoutY="245.0" mnemonicParsing="false" text="Login" />
    </children>
 </AnchorPane>
