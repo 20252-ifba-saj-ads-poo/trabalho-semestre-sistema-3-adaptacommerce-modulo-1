@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TitledPane animated="false" prefHeight="345.0" prefWidth="210.0" text="Administrador">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="239.0" prefWidth="207.0">
+               <children>
+                  <CheckBox layoutX="9.0" layoutY="14.0" minWidth="-1.0" mnemonicParsing="false" text="Conferência de Vendas" />
+                  <CheckBox layoutX="9.0" layoutY="72.0" mnemonicParsing="false" text="Excluir Produtos" />
+                  <CheckBox layoutX="9.0" layoutY="42.0" mnemonicParsing="false" text="Cadastrar Produtos" />
+                  <CheckBox layoutX="9.0" layoutY="101.0" mnemonicParsing="false" text="Alterar Senhas" />
+                  <CheckBox layoutX="9.0" layoutY="129.0" mnemonicParsing="false" text="Atualizar Pagamentos" />
+                  <CheckBox layoutX="9.0" layoutY="160.0" mnemonicParsing="false" text="Excluir Usuários" />
+                  <CheckBox layoutX="8.0" layoutY="189.0" mnemonicParsing="false" text="Consultar Estoque" />
+                  <CheckBox layoutX="7.0" layoutY="219.0" mnemonicParsing="false" text="Gravar alertas" />
+                  <CheckBox layoutX="7.0" layoutY="245.0" mnemonicParsing="false" text="Consultar Validades" />
+                  <CheckBox layoutX="8.0" layoutY="273.0" mnemonicParsing="false" text="Cadastrar Validades" />
+                  <CheckBox layoutX="7.0" layoutY="299.0" mnemonicParsing="false" text="Cadastrar Documentos" />
+                  <ScrollBar layoutX="187.0" layoutY="3.0" orientation="VERTICAL" prefHeight="309.0" prefWidth="14.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" prefHeight="345.0" prefWidth="214.0" text="Estoque">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="312.0" prefWidth="212.0">
+               <children>
+                  <CheckBox layoutX="6.0" layoutY="14.0" mnemonicParsing="false" text="Consultar Estoque" />
+                  <CheckBox layoutX="6.0" layoutY="41.0" mnemonicParsing="false" text="Gravar alertas" />
+                  <CheckBox layoutX="6.0" layoutY="68.0" mnemonicParsing="false" text="Consultar Validades" />
+                  <CheckBox layoutX="6.0" layoutY="94.0" mnemonicParsing="false" text="Cadastrar Validades" />
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <TitledPane animated="false" prefHeight="345.0" prefWidth="202.0" text="Financeiro">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="319.0" prefWidth="201.0">
+               <children>
+                  <CheckBox layoutX="7.0" layoutY="13.0" mnemonicParsing="false" text="Cadastrar Documentos" />
+                  <CheckBox layoutX="7.0" layoutY="39.0" mnemonicParsing="false" text="Cadastrar Pagamentos" />
+                  <CheckBox layoutX="7.0" layoutY="66.0" mnemonicParsing="false" text="Excluir Pgamentos" />
+                  <CheckBox layoutX="6.0" layoutY="91.0" mnemonicParsing="false" text="Alterar Dados de Pagamentos" />
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <TitledPane animated="false" prefHeight="344.0" prefWidth="202.0" text="Vendedor">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <CheckBox layoutX="8.0" layoutY="12.0" mnemonicParsing="false" text="Inciar Nova Venda" />
+                  <CheckBox layoutX="8.0" layoutY="36.0" mnemonicParsing="false" text="Consultar Produtos" />
+                  <CheckBox layoutX="8.0" layoutY="63.0" mnemonicParsing="false" text="Realizar Devoluções" />
+                  <CheckBox layoutX="8.0" layoutY="91.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="185.0" text="Reimprimir Documentos" />
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+   </children>
+</FlowPane>
