@@ -1,66 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.FlowPane?>
 
-
-<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="349.0" prefWidth="836.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TitledPane animated="false" prefHeight="345.0" prefWidth="210.0" text="Administrador">
+      <TitledPane animated="false" prefHeight="345.0" prefWidth="210.0" text="Funcionalidades Administrador">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="239.0" prefWidth="207.0">
                <children>
-                  <CheckBox layoutX="9.0" layoutY="14.0" minWidth="-1.0" mnemonicParsing="false" text="Conferência de Vendas" />
-                  <CheckBox layoutX="9.0" layoutY="72.0" mnemonicParsing="false" text="Excluir Produtos" />
-                  <CheckBox layoutX="9.0" layoutY="42.0" mnemonicParsing="false" text="Cadastrar Produtos" />
-                  <CheckBox layoutX="9.0" layoutY="101.0" mnemonicParsing="false" text="Alterar Senhas" />
-                  <CheckBox layoutX="9.0" layoutY="129.0" mnemonicParsing="false" text="Atualizar Pagamentos" />
-                  <CheckBox layoutX="9.0" layoutY="160.0" mnemonicParsing="false" text="Excluir Usuários" />
-                  <CheckBox layoutX="8.0" layoutY="189.0" mnemonicParsing="false" text="Consultar Estoque" />
-                  <CheckBox layoutX="7.0" layoutY="219.0" mnemonicParsing="false" text="Gravar alertas" />
-                  <CheckBox layoutX="7.0" layoutY="245.0" mnemonicParsing="false" text="Consultar Validades" />
-                  <CheckBox layoutX="8.0" layoutY="273.0" mnemonicParsing="false" text="Cadastrar Validades" />
-                  <CheckBox layoutX="7.0" layoutY="299.0" mnemonicParsing="false" text="Cadastrar Documentos" />
-                  <ScrollBar layoutX="187.0" layoutY="3.0" orientation="VERTICAL" prefHeight="309.0" prefWidth="14.0" />
+                  <Label layoutX="3.0" layoutY="15.0" text="Conferência de Vendas" />
+                  <Label layoutX="3.0" layoutY="30.0" text="Cadastrar Produtos" />
+                  <Label layoutX="2.0" layoutY="45.0" text="Excluir Produtos" />
+                  <Label layoutX="3.0" layoutY="60.0" text="Alterar Senhas" />
+                  <Label layoutX="3.0" layoutY="75.0" text="Atualizar Pagamentos" />
+                  <Label layoutX="3.0" layoutY="90.0" text="Excluir Usuários" />
+                  <Label layoutX="3.0" layoutY="105.0" text="Consultar Estoque" />
+                  <Label layoutX="3.0" layoutY="120.0" text="Gravar alertas" />
+                  <Label layoutX="3.0" layoutY="135.0" text="Consultar Validades" />
+                  <Label layoutX="3.0" layoutY="150.0" text="Cadastrar Validades" />
+                  <Label layoutX="3.0" layoutY="165.0" text="Cadastrar Documentos" />
+                  <Label layoutX="3.0" layoutY="183.0" text="Cadastrar Pagamentos" />
+                  <Label layoutX="3.0" layoutY="201.0" text="Cadastrar Pagamentos" />
+                  <Label layoutX="3.0" layoutY="219.0" text="Excluir Pgamentos" />
+                  <Label layoutX="3.0" layoutY="237.0" text="Alterar Dados de Pagamentos" />
+                  <Label layoutX="3.0" layoutY="255.0" text="Inciar Nova Venda" />
+                  <Label layoutX="3.0" layoutY="273.0" text="Consultar Produtos" />
+                  <Label layoutX="3.0" layoutY="291.0" text="Realizar Devoluções" />
                </children>
             </AnchorPane>
         </content>
       </TitledPane>
-      <TitledPane animated="false" prefHeight="345.0" prefWidth="214.0" text="Estoque">
+      <TitledPane animated="false" prefHeight="345.0" prefWidth="214.0" text="Funcionalidades Estoque">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="312.0" prefWidth="212.0">
                <children>
-                  <CheckBox layoutX="6.0" layoutY="14.0" mnemonicParsing="false" text="Consultar Estoque" />
-                  <CheckBox layoutX="6.0" layoutY="41.0" mnemonicParsing="false" text="Gravar alertas" />
-                  <CheckBox layoutX="6.0" layoutY="68.0" mnemonicParsing="false" text="Consultar Validades" />
-                  <CheckBox layoutX="6.0" layoutY="94.0" mnemonicParsing="false" text="Cadastrar Validades" />
+                  <Label layoutX="3.0" layoutY="7.0" text="Consultar Estoque" />
+                  <Label layoutX="3.0" layoutY="22.0" text="Gravar alertas" />
+                  <Label layoutX="3.0" layoutY="37.0" text="Consultar Validades" />
+                  <Label layoutX="3.0" layoutY="52.0" text="Cadastrar Validades" />
                </children>
             </AnchorPane>
          </content>
       </TitledPane>
-      <TitledPane animated="false" prefHeight="345.0" prefWidth="202.0" text="Financeiro">
+      <TitledPane animated="false" prefHeight="345.0" prefWidth="202.0" text="Funcionalidades Financeiro">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="319.0" prefWidth="201.0">
                <children>
-                  <CheckBox layoutX="7.0" layoutY="13.0" mnemonicParsing="false" text="Cadastrar Documentos" />
-                  <CheckBox layoutX="7.0" layoutY="39.0" mnemonicParsing="false" text="Cadastrar Pagamentos" />
-                  <CheckBox layoutX="7.0" layoutY="66.0" mnemonicParsing="false" text="Excluir Pgamentos" />
-                  <CheckBox layoutX="6.0" layoutY="91.0" mnemonicParsing="false" text="Alterar Dados de Pagamentos" />
+                  <Label layoutX="3.0" layoutY="15.0" text="Cadastrar Documentos" />
+                  <Label layoutX="3.0" layoutY="30.0" text="Cadastrar Pagamentos" />
+                  <Label layoutX="3.0" layoutY="45.0" text="Cadastrar Pagamentos" />
+                  <Label layoutX="3.0" layoutY="60.0" text="Excluir Pgamentos" />
+                  <Label layoutX="3.0" layoutY="75.0" text="Alterar Dados de Pagamentos" />
                </children>
             </AnchorPane>
          </content>
       </TitledPane>
-      <TitledPane animated="false" prefHeight="344.0" prefWidth="202.0" text="Vendedor">
+      <TitledPane animated="false" prefHeight="344.0" prefWidth="202.0" text="Funcionalidades Vendedor">
          <content>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <CheckBox layoutX="8.0" layoutY="12.0" mnemonicParsing="false" text="Inciar Nova Venda" />
-                  <CheckBox layoutX="8.0" layoutY="36.0" mnemonicParsing="false" text="Consultar Produtos" />
-                  <CheckBox layoutX="8.0" layoutY="63.0" mnemonicParsing="false" text="Realizar Devoluções" />
-                  <CheckBox layoutX="8.0" layoutY="91.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="185.0" text="Reimprimir Documentos" />
+                  <Label layoutX="3.0" layoutY="15.0" text="Inciar Nova Venda" />
+                  <Label layoutX="3.0" layoutY="30.0" text="Consultar Produtos" />
+                  <Label layoutX="3.0" layoutY="45.0" text="Realizar Devoluções" />
                </children>
             </AnchorPane>
          </content>
