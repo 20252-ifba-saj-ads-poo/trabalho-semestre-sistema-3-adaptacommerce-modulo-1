@@ -17,3 +17,18 @@ A equipe deve desenvolver as seguintes funcionalidades, todas com prioridade Ess
 - Conformidade (RNF008): O tratamento de dados dos usuários deve seguir as normas da LGPD.
 - Integridade (RNF009): O sistema deve validar todos os dados inseridos para prevenir inconsistências, especialmente a unicidade do ID de usuário.
 - Usabilidade (RNF004): A interface de login e cadastro de usuários deve ser clara e intuitiva.
+
+
+
+Autor
+Livro
+Usuário
+
+App
+Biblioteca
+
+AdminController
+CadAutorController
+CadLivroController 
+LoginController
+MasterController
