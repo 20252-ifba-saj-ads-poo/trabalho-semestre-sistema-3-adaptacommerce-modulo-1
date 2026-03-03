@@ -16,7 +16,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 
-public class AdminController implements Initialize {
+public class AdminController implements Initializable {
 
     
     @FXML
@@ -33,7 +33,9 @@ public class AdminController implements Initialize {
 
     @FXML
     private TextField Cnome;
+    
     @FXML
+    private PasswordField Csenha;
     void entrar(ActionEvent event) {
         if(Cnome.getText().equals("admin") && Csenha.getText().equals("admin")){
             new Alert(AlertType.INFORMATION, "Usuário e senha corretos").showAndWait();
@@ -42,8 +44,7 @@ public class AdminController implements Initialize {
             new Alert(AlertType.ERROR, "Usuário ou senha inválidos").show();
         }
     }
-    @FXML
-    private PasswordField Csenha;
+    
     
 
     @FXML
