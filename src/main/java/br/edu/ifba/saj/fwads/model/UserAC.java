@@ -4,11 +4,15 @@ public class UserAC {
    private int id;
     String name;
     public String senha;
+    
     public UserAC(int id, String name, String senha) {
         this.id = id;
         this.name = name;
         this.senha = senha;
-    }  
+        
+        
+    } 
+    
     public void ValidSenha(String senha) { if (
         senha.length() <= 6 && senha.length() >= 1 ) { this.senha = senha; System.out.println("Senha válida");}
         else System.err.println("Senha inválida");}
@@ -17,5 +21,14 @@ public class UserAC {
         else System.err.println("Nome inválido");}
     
     public int getId() {
-        return id;}
+        return id;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+}
