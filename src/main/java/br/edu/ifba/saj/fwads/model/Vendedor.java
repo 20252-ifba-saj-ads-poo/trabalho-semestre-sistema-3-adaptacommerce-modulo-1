@@ -1,6 +1,6 @@
 package br.edu.ifba.saj.fwads.model;
 
-public class Vendedor {
+public class Vendedor extends UserAC {
     private String email;
 
     public Vendedor(int id, String nome, String email, String senha) {
@@ -11,3 +11,4 @@ public class Vendedor {
         return email;
     }
 }
+   
