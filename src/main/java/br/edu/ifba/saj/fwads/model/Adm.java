@@ -1,7 +1,4 @@
 package br.edu.ifba.saj.fwads.model;
-import java.util.ArrayList;
-import java.util.List;
-
 public class Adm extends UserAC {
     
     private String email;

@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import br.edu.ifba.saj.fwads.App;
+import br.edu.ifba.saj.fwads.model.BancoUsuarios;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -35,17 +36,51 @@ public class AdminController implements Initializable {
     private TextField Cnome;
     
     @FXML
-    private PasswordField Csenha;
-    void entrar(ActionEvent event) {
-        if(Cnome.getText().equals("admin") && Csenha.getText().equals("admin")){
-            new Alert(AlertType.INFORMATION, "Usuário e senha corretos").showAndWait();
-            App.setRoot("controller/Master.fxml");
-        }else{
-            new Alert(AlertType.ERROR, "Usuário ou senha inválidos").show();
+    void entrar(ActionEvent event) { try {int idUser = integer.parseInt(Cnome.getText());
+        String senha = Csenha.getText();
+        boolean loginSucesso =  false; 
+        for ( userAC : BancoUsuarios.getlistaUsuarios()) {
+            if (userAC.getId() == idUser) loginSucesso = true;
+        
+        if (usuario.isbloqueado()) {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Login Bloqueado");
+            return;
+        }(usuario.getSenha().equals(senha)) {
+            usuario.zerarTentativas();
+            new Alert(AlertType.INFORMATION, "login realizado com exito").showAndWait();
+App.setRoot("controller/master.fxml");} else {
+                usuario.registrarTentativaFalha();
+                Alert alert = new Alert(AlertType.ERROR);
+                alert.setTitle("Login Falhado");
+                alert.setContentText("senha incorreta. Tentativa" + usuario.getTentativasFalhas + "de 5");
+                alert.showAndWait();
+            }
+            break; 
         }
     }
-    
-    
+    if (!loginSucesso) {
+        Alert alert = new Alert(AlertType.ERROR);
+        alert.setTitle("Login Falhado");
+        alert.setContentText("Usuário não encontrado");
+        alert.showAndWait();
+    }
+    catch (NumberFormatException e) {
+        Alert alert = new Alert(AlertType.ERROR);
+        alert.setTitle("Entrada Inválida");
+        alert.setContentText("ID de usuário deve ser um número inteiro");
+        alert.showAndWait();
+    }
+
+    @Override
+
+    public void initialize(URL url, ResourceBundle rb) {
+        if (BancoUsuarios.getlistaUsuarios().isEmpty()) {
+            Adm admin = new Adm(1, "Admin", "admin123", "admin123");
+            BancoUsuarios.addUsuario(admin);
+            System.out.println("Usuário admin criado com ID: " + admin.getId());
+        }
+    }
 
     @FXML
     private ImageView LogoReduzida;
