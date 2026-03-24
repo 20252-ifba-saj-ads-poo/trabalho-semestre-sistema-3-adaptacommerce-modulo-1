@@ -32,16 +32,16 @@ public class UserAC {
     public boolean isBloqueado() {
         return bloqueado;
     }
+public int get tentativasfalhas() {
+        return tentativasfalhas;
+    }
 
     public int getId() {
         return id;
     }
-
     public String getName() {
         return name;
     }
-
     public String getSenha() {
         return senha;
     }
-}

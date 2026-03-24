@@ -1,7 +1,7 @@
 package br.edu.ifba.saj.fwads.model;
 
 public class ValidacaoAC {
-    public boolean validar(String senha) {
+    public static boolean validar(String senha) {
         if (senha==null || senha.length() < 8) {
            return false;
         }

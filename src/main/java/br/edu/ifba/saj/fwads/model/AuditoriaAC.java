@@ -1,31 +1,20 @@
 package br.edu.ifba.saj.fwads.model;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class AuditoriaAC {
-  public List<UserAC> usuariosAud = new ArrayList<>();
-  public List<Adm> Adm = new ArrayList<>();
+  public static List<String> historico = new ArrayList<>();
 
-  private LocalDateTime dataHora;
-    private String acao;
-    private UserAC usuario;
+public static void registrarAcao(String acao, String usuario) {
+    LocalDateTime agora = LocalDateTime.now();
+    DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 
-  public AuditoriaAC(LocalDateTime dataHora, String acao, UserAC usuario) {
-        this.dataHora = dataHora;
-        this.acao = acao;
-        this.usuario = usuario;
-      
 
-    }
-    public LocalDateTime getDataHora() {
-        return dataHora;
-    }
-    public String getAcao() {
-        return acao;
-        }
-    public UserAC getUsuario() {
-        return usuario;
-    }
-};
+String registro = "[" + agora.format(formato) + "] " + acao + "| Usuário: " + usuario;
+historico.add(registro);  System.out.println("Ação registrada:" + registro); }
+    
+  
+}

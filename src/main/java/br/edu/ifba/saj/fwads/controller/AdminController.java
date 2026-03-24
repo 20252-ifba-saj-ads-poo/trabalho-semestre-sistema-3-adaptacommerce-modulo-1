@@ -36,10 +36,10 @@ public class AdminController implements Initializable {
     private TextField Cnome;
     
     @FXML
-    void entrar(ActionEvent event) { try {int idUser = integer.parseInt(Cnome.getText());
-        String senha = Csenha.getText();
+    void entrar(ActionEvent event) { try {int idUser = Integer.parseInt(Cnome.getText());
+        String senha = txSenha.getText();
         boolean loginSucesso =  false; 
-        for ( userAC : BancoUsuarios.getlistaUsuarios()) {
+        for (user : BancoUsuarios.getlistaUsuarios()) {
             if (userAC.getId() == idUser) loginSucesso = true;
         
         if (usuario.isbloqueado()) {
@@ -58,7 +58,7 @@ App.setRoot("controller/master.fxml");} else {
             }
             break; 
         }
-    }
+    } 
     if (!loginSucesso) {
         Alert alert = new Alert(AlertType.ERROR);
         alert.setTitle("Login Falhado");
@@ -123,18 +123,3 @@ App.setRoot("controller/master.fxml");} else {
         assert Minfo != null : "fx:id=\"Minfo\" was not injected: check your FXML file 'Admin.fxml'.";
 
     }
-
-}
-
-    @Override
-    public void initialize(URL url, ResourceBundle rb){
-
-    } 
-        // TODO
-
-
-
-    
-
-
-//
