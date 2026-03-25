@@ -5,7 +5,7 @@ public class UserAC {
     private String name;
     private String senha;
 
-    private int tentativasfalhas;
+    private static int tentativasfalhas;
     private boolean bloqueado;
     
     public UserAC(int id, String name, String senha) {

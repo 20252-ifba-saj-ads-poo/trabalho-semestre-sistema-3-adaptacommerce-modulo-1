@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import br.edu.ifba.saj.fwads.App;
+import br.edu.ifba.saj.fwads.model.Adm;
 import br.edu.ifba.saj.fwads.model.BancoUsuarios;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -34,22 +35,22 @@ public class AdminController implements Initializable {
 
     @FXML
     private TextField Cnome;
+
+    @FXML
+    private TextField Csenha;
     
     @FXML
     void entrar(ActionEvent event) { try {int idUser = Integer.parseInt(Cnome.getText());
-        String senha = txSenha.getText();
+        String senha = Csenha.getText();
         boolean loginSucesso =  false; 
-        for (user : BancoUsuarios.getlistaUsuarios()) {
-            if (userAC.getId() == idUser) loginSucesso = true;
+        for (usuario : BancoUsuarios.getListaUsuarios()) {
+            if (usuario.getId() == idUser) loginSucesso = true;
         
-        if (usuario.isbloqueado()) {
+        if (userAC.isbloqueado()) {
             Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Login Bloqueado");
-            return;
-        }(usuario.getSenha().equals(senha)) {
-            usuario.zerarTentativas();
-            new Alert(AlertType.INFORMATION, "login realizado com exito").showAndWait();
-App.setRoot("controller/master.fxml");} else {
+            alert.setTitle("Login Bloqueado");return;}
+
+            else {
                 usuario.registrarTentativaFalha();
                 Alert alert = new Alert(AlertType.ERROR);
                 alert.setTitle("Login Falhado");
@@ -65,6 +66,8 @@ App.setRoot("controller/master.fxml");} else {
         alert.setContentText("Usuário não encontrado");
         alert.showAndWait();
     }
+   
+   
     catch (NumberFormatException e) {
         Alert alert = new Alert(AlertType.ERROR);
         alert.setTitle("Entrada Inválida");
@@ -78,9 +81,9 @@ App.setRoot("controller/master.fxml");} else {
         if (BancoUsuarios.getlistaUsuarios().isEmpty()) {
             Adm admin = new Adm(1, "Admin", "admin123", "admin123");
             BancoUsuarios.addUsuario(admin);
-            System.out.println("Usuário admin criado com ID: " + admin.getId());
+      }      System.out.println("Usuário admin criado com ID: " + admin.getId());
         }
-    }
+    
 
     @FXML
     private ImageView LogoReduzida;
@@ -113,6 +116,9 @@ App.setRoot("controller/master.fxml");} else {
 
     }
 
+   
+   
+   
     @FXML
     void initialize() {
         assert AdminController != null : "fx:id=\"AdminController\" was not injected: check your FXML file 'Admin.fxml'.";
@@ -122,4 +128,4 @@ App.setRoot("controller/master.fxml");} else {
         assert LogoReduzida != null : "fx:id=\"LogoReduzida\" was not injected: check your FXML file 'Admin.fxml'.";
         assert Minfo != null : "fx:id=\"Minfo\" was not injected: check your FXML file 'Admin.fxml'.";
 
-    }
+    }}
