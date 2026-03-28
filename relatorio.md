@@ -4,7 +4,7 @@
 
 ### 📊 Detalhamento do Barema
 - **[15/20] Interface Gráfica:** A interface foi modelada e executa com alertas básicos usando a classe `Alert` do JavaFX no momento de erros de login, refletindo a funcionalidade mínima de entrada e visualização.
-- **[0/30] Camada de Negócio:** **0/30**. **⚠️ ALERTA DE REGRA CRÍTICA PARA BOILERPLATE / CÓDIGO BASE APLICADA:** A equipe não criou NENHUMA classe Service baseada em genericidade para as entidades do Módulo 1 (nem mesmo os previstos Serviços para `UserAC` ou afins). Todas as validações ocorrem diretamente nos Controllers, não há Predicates e as Exceptions customizadas exigidas não existem.
+- **[0/30] Camada de Negócio:** **0/30**. Todas as validações ocorrem diretamente nos Controllers, não há Predicates e as Exceptions customizadas exigidas não existem.
 - **[0/20] Camada de Dados (Repository/Modelagem):** Nenhuma entidade de domínio como `UserAC` herda de `AbstractModel<ID>`. Não há sobrescrita inteligente dos métodos `equals/hashCode` e nenhum repositório herda de `GenericDAO`. Os dados estão salvos em um repositório centralizado Singleton volátil (estática com List).
 - **[0/20] Separação em Camadas:** O fluxo MVC está quebrado. A lógica real da regra de negócio (incremento de falhas, validação de bloqueio, loop no List de usuários) foi implementada inteiramente dentro do `LoginController` e do `AdminController`.
 - **[2/10] Boas Práticas e POO:** Demonstrou conhecimentos essenciais de herança (`Vendedor extends UserAC`), mas perde substancialmente os pontos de Código Bem Escrito por descartar as regras básicas de encapsulamento arquitetural, mantendo verificações inseguras (`String == String`) aglomeradas nos controllers.
